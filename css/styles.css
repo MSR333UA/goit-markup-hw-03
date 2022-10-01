@@ -17,10 +17,29 @@ letter-spacing: 0.03em;
 font-size: 14px;
 }
 
+/* Утиліта */
 
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+padding-left: 15px;
+padding-right: 15px;   
+margin-left: auto;
+margin-right: auto;
+width: 1200px;
+outline: 2px solid tomato;
+}
+
+.section {
+padding-top: 94px;
+padding-bottom: 94px;
+}
 /* Меню навігації */
-
-
 
 .logo-first {
 color: var(--link-hover-color);
@@ -35,16 +54,22 @@ line-height: 1.19;
 color: var(--logo-color);
 }
 
-.list {
-list-style: none;
-text-decoration: none; 
+.nav {
+    display: flex;
+    margin-left: 93px;
 }
 
-.items .link {
-color: var(--primary-text-color);
-font-weight: 500;
-letter-spacing: 0.02em;
-line-height: calc(16/14);
+.main {
+display: flex;
+}
+
+.main-nav {
+display: flex;
+align-items: center;
+}
+
+.nav .item:not(:last-child),
+.contact .item:not(:last-child) {margin-right: 50px;
 }
 
 .nav .link:hover,
@@ -56,9 +81,28 @@ color: var(--link-hover-color);
 color: var(--link-hover-color);
 }
 
+.item .link {
+display: block;
+padding-top: 21px;
+padding-bottom: 21px;
+
+    color: var(--primary-text-color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: calc(16/14);
+}
+
+
 /* .contact  */
 
+.contact {
+    display: flex;
+    margin-left: auto;
+}
+
+
 .contact .link {
+
 color: var(--title-text-color); 
 font-weight: 500;
 letter-spacing: 0.02em;
@@ -73,10 +117,14 @@ color: var(--link-hover-color);
 /* Рішення для бізнесу */
 
 .hero {
+text-align: center;
 background-color: var(--bg-footer-color);
+padding-bottom: 200px;
 }
 
 .hero .title {
+margin-top: 0;
+margin-bottom: 0;
 color: var(--bg-color);
 font-weight: 900;
 font-size: 44px;
@@ -88,24 +136,25 @@ text-transform: uppercase;
 
 
 .button {
+cursor: pointer;
+padding: 10px 32px;
+min-width: 216px;
+margin-top: 30px;
+
 color: var(--bg-color);
 background-color: var(--link-hover-color);
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
+border-radius: 4px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 font-family: inherit
 }
 
 .button:hover,
 .button:focus {
 background-color: var(--link-hover-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-}
-
-.button.pointer {
-cursor: pointer;
 }
 
 
@@ -124,6 +173,9 @@ cursor: pointer;
     margin: -1px;
 }
 
+.advantage {
+    display: flex;
+}
 
 .advantage-title {
 font-size: 14px;
@@ -138,22 +190,29 @@ line-height: 1.71;
 
 
 /* Чим ми займаємося */
-.features {
-text-align: center;
+
+.features-items {
+    display: flex;
 }
 
 /* Наша команда */
 
+
 .team {
-background-color: var(--bg-team-color);
-text-align: center;
+    background-color: var(--bg-team-color);
+    text-align: center;
 }
 
 .section-title {
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
+
+.team-list {
+    display: flex;
+}
+
 .team-name {
 font-weight: 500;
 font-size: 16px;
@@ -213,6 +272,7 @@ line-height: 1.71;
 
 
 .project-button {
+ padding: 6px 25px;  
 cursor: pointer;
 color: var(--primary-text-color);
 background-color: var(--bg-team-color);
@@ -220,7 +280,8 @@ border-radius: 4px;
 font-weight: 500;
 font-size: 16px;
 line-height: calc(26/16);
-font-family: inherit
+font-family: inherit;
+text-align: center; 
 }
 
 .project-button:hover,
