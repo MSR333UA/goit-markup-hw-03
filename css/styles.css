@@ -118,14 +118,23 @@ color: var(--link-hover-color);
 /* Рішення для бізнесу */
 
 .hero {
+width: 1600px;
+height: 600px;
 text-align: center;
+margin-left: auto;
+margin-right: auto;
+
 background-color: var(--bg-footer-color);
 padding-bottom: 200px;
 }
 
 .hero .title {
-margin-top: 200px;
+width: 696px;
+margin-top: 120px;
 margin-bottom: 0;
+margin-left: auto;
+margin-right: auto;
+
 color: var(--bg-color);
 font-weight: 900;
 font-size: 44px;
@@ -176,6 +185,7 @@ background-color: var(--link-hover-color);
 
 .advantage {
    display: flex;
+ 
 }
 
 
@@ -211,6 +221,9 @@ width: 370px;
 .team {
     background-color: var(--bg-team-color);
     text-align: center;
+    width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .section-title {
@@ -252,6 +265,9 @@ border-radius: 0px 0px 4px 4px;
 
 .footer {
 background-color: var(--bg-footer-color);
+width: 1600px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .logo-footer {
