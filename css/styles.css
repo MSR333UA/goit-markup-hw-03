@@ -361,6 +361,7 @@ margin-right: 8px;
 margin-bottom: 50px;
 padding: 6px 25px;  
 
+border: none;
 cursor: pointer;
 color: var(--primary-text-color);
 background-color: var(--bg-team-color);
