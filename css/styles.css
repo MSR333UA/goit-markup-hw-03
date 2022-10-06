@@ -36,7 +36,7 @@ padding-left: 15px;
 padding-right: 15px;   
 margin-left: auto;  
 margin-right: auto;
-width: 1230px;
+width: 1200px;
 /* outline: 2px solid tomato; */
 }
 
@@ -355,6 +355,7 @@ line-height: 1.71;
 .project-items {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .project-item:not(:last-child) {
@@ -362,7 +363,6 @@ margin-right: 8px;
 }
 
 .project-button {
-margin-bottom: 50px;
 padding: 6px 25px;  
 
 border: none;
