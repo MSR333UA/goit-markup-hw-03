@@ -395,7 +395,7 @@ flex-wrap: wrap;
 
 .project-card  {
 /* width: 370px; */
-width: calc((100% - 60px) / 3);
+width: calc((100% - 60) / 3);
 
 }
 .project-card:not(:nth-last-child(-n + 3)) {
