@@ -82,6 +82,9 @@ display: flex;
 align-items: center;
 }
 
+.nav:last-child {
+    margin-right: 334px;
+}
 
 .item:not(:last-child) {
     margin-right: 50px;
@@ -98,8 +101,7 @@ color: var(--link-hover-color);
 
 .item .link {
 display: block;
-padding-top: 21px;
-padding-bottom: 21px;
+padding: 21px 0;
 
     color: var(--primary-text-color);
     font-weight: 500;
@@ -112,7 +114,6 @@ padding-bottom: 21px;
 
 .contact {
     display: flex;
-    margin-left: auto;
     align-items: center;
 }
 
@@ -136,6 +137,7 @@ color: var(--link-hover-color);
 text-align: center;
 margin-left: auto;
 margin-right: auto;
+height: 600px;
 
 background-color: var(--bg-footer-color);
 padding-bottom: 200px;
@@ -211,7 +213,7 @@ background-color: var(--bg-color);
 .advantage-list:not(:last-child), 
 .team-card:not(:last-child), 
 .image:not(:last-child) {
-    margin-right: 30px;
+margin-right: 30px;
 }
 .advantage-title {
 margin-bottom: 10px;
@@ -233,8 +235,8 @@ line-height: 1.71;
 /* Чим ми займаємося */
 
 .features-items {
-    display: flex;
-    flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 
 .image {
@@ -266,7 +268,6 @@ width: 370px;
 
 .team-list {
 display: flex;
-flex-wrap: wrap;
 }
 
 .team-name {
@@ -398,8 +399,8 @@ flex-wrap: wrap;
 
 
 .project-card {
-    /* width: calc((100% - 60px) / 3); */
-    width: 370px;
+    width: calc((100% - 60px) / 3);
+    /* width: 370px; */
    
 }
 .project-card:not(:nth-last-child(-n + 3)) {
