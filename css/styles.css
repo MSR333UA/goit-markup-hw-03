@@ -51,8 +51,7 @@ padding-bottom: 94px;
 }
 
 .logo-first {
-margin-top: 24px;
-margin-bottom: 25px;
+padding: 24px 0 25px;
 
 color: var(--link-hover-color);
 font-family: 'Raleway', sans-serif;
@@ -67,8 +66,8 @@ color: var(--logo-color);
 }
 
 .nav {
-    display: flex;
-    margin-left: 93px;
+display: flex;
+margin-left: 93px;
 }
 
 .main {
@@ -80,10 +79,6 @@ display: flex;
 .main-nav {
 display: flex;
 align-items: center;
-}
-
-.nav:last-child {
-    margin-right: 334px;
 }
 
 .item:not(:last-child) {
@@ -101,12 +96,12 @@ color: var(--link-hover-color);
 
 .item .link {
 display: block;
-padding: 21px 0;
+padding: 32px 0;
 
-    color: var(--primary-text-color);
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    line-height: calc(16/14);
+color: var(--primary-text-color);
+font-weight: 500;
+letter-spacing: 0.02em;
+line-height: calc(16/14);
 }
 
 
@@ -115,6 +110,7 @@ padding: 21px 0;
 .contact {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 
 
@@ -137,15 +133,13 @@ color: var(--link-hover-color);
 text-align: center;
 margin-left: auto;
 margin-right: auto;
-height: 600px;
+padding: 200px 0;
 
 background-color: var(--bg-footer-color);
-padding-bottom: 200px;
 }
 
 .hero .title {
 width: 696px;
-padding-top: 120px;
 margin: 0 auto 30px;
 
 color: var(--bg-color);
@@ -233,7 +227,7 @@ line-height: 1.71;
 
 .features-items {
 display: flex;
-flex-wrap: wrap;
+justify-content: space-between;
 }
 
 .image {
@@ -290,10 +284,12 @@ color: var(--title-text-color);
 width: 270px;
 
 background-color: var(--bg-color);
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 02);
-border-radius: 0px 0px 4px 4px;
 }
 
+.bg-team {
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
 
 /* footer */
 
@@ -302,11 +298,11 @@ border-radius: 0px 0px 4px 4px;
 background-color: var(--bg-footer-color);
 margin-left: auto;
 margin-right: auto;
+padding: 60px 0;
 }
 
 .logo-footer {
 display: block;
-padding-top: 60px;
 margin-bottom: 20px;
 
 color: var(--link-hover-color);
@@ -317,11 +313,6 @@ line-height: 1.19;
 
 .logo-footer-second {
 color: var(--bg-color);
-
-}
-
-.address-item:last-child {
-padding-bottom: 60px;
 
 }
 
